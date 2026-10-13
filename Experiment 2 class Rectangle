@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Rectangle {
+class Rectangle 
+{
 private:
     float length, breadth;
 
 public:
-    void setData(float l, float b) {
+    void setData(float l, float b) 
+{
         length = l;
         breadth = b;
     }
@@ -15,15 +17,18 @@ public:
     float perimeter();
 };
 
-float Rectangle::area() {
+float Rectangle::area() 
+{
     return length * breadth;
 }
 
-float Rectangle::perimeter() {
+float Rectangle::perimeter() 
+{
     return 2 * (length + breadth);
 }
 
-int main() {
+int main() 
+{
     Rectangle r;
     float l, b;
 
